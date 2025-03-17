@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model
+class Transparence extends Model
 {
     protected $fillable = [
-        'title',
-        'text',
-        'writer'
+        'reason',
+        'type',
+        'quantity'
     ];
 }

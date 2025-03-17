@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,10 +19,31 @@
         </style>
     @endif 
 </head>
-<body class="bg-slate-900">
-    
-    <div class="container bg-slate-900">
+<body class="bg-white">
+    <header style="height: 25%; width:100%;">
+        <div class="d-flex justify-content-center flex-nowrap" style="background-color: white;">
+            <img style="width:235px; height: 235px; " src="{{ asset('logomarca.jpeg') }}" alt="logomarca consepro Torres">
+        </div>
+        <nav style="height: 45%;" class="bg-success d-flex justify-content-center">
+            <div class="d-flex justify-content-center align-items-center" style="padding-right: 25%;">
+                <ul class="bg-success d-flex flex-nowrap fs-5">
+                    <li style="padding-right: 50%;" ><a href="/home" target="_self" class="link-light link-opacity-75-hover">Home</a></li>
+                    <li style="padding-right: 50%;"><a href="/transparence" target="_self" class="link-light link-opacity-75-hover">Transparência</a></li>
+                    <li style="padding-right: 50%;">aaaaa</li>
+                    <li style="padding-right: 50%;">aaaaa</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container bg-white">
         @yield('content')
     </div>
+
+    <footer class="bg-secondary" style="width: 100%; height:25%">
+        <Div style="width: 100%; height: 50%; justify-content: center; align-items: center;">
+            <h2 style="padding: 3%;">&copy todos os direitos reservados ao CONSEPRO Torres</h2>
+        </Div>
+    </footer>
 </body>
 </html>
